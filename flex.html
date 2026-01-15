@@ -10,6 +10,11 @@
             gap: 20px;
 
         }
+        .items:hover {
+            background-color: blueviolet;
+            color: rgb(159, 63, 11);
+             transform: rotate(30deg) translateX(20px);
+        }
         .box {
             background-color: rgb(240, 182, 106);
             padding: 10px;
@@ -17,10 +22,14 @@
             color: azure;
             
         }
+
         .items {
             width: 100px;
             background-color: brown;
             padding: 10px;
+            height: 100px;
+            width: 100px;
+           transition: transform 0.5s ease-in 0.2s;
         }
         .box-container {
             display: flex;
