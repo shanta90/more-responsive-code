@@ -6,6 +6,15 @@
     <title>Transform</title>
 </head>
 <style>
+    /* @keyframes move {
+        from {
+            transform:rotate(0) translateX(0);
+        }
+        to {
+            transform:rotate(60deg) translateX(200px);
+        }
+    } */
+
     .container {
         background-color:blanchedalmond ;
         width: 300px;
@@ -17,12 +26,14 @@
 background-color: aqua;
 height: 100px;
 width: 100px;
+/* animation: move 0.3s  0.1s 5 linear ; */
+transition:transform 0.5s ease-in-out 0.5s;
 
     }
     .box:hover {
-        background-color: rgb(210, 185, 153);
-        transform: rotate(30deg) scale(1.25, 1.2) translateX(100px) 
-
+        background-color: mediumvioletred;
+        transform: rotate(30deg) scale( 1.2) translateX(100px);
+      /* animation: move 0.3s  0.1s 5 linear ; */
     }
 </style>
 <body>
